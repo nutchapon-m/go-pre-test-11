@@ -51,7 +51,7 @@ func main() {
 
 	// 4. Setup Echo
 	e := echo.New()
-	e.Use(middleware.Logger())
+	e.Use(middleware.RequestLogger())
 	e.Use(middleware.Recover())
 	// CORS? add if needed
 
